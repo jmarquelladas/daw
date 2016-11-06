@@ -12,6 +12,8 @@
 	<div class="container">
 		<h1>Página ejemplo con bootstrap - My First Bootstrap Page</h1>
 		<p>Texto de la página - This is some text.</p> 
+		<p>Otro párrafo de la página</p>
+		<p>Modificacion del domingo 6 de noviembre de 2106</p>
 	</div>
 </body>
 </html>
