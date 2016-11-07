@@ -10,10 +10,27 @@
 </head>
 <body>
 	<div class="container">
-		<h1>Página ejemplo con bootstrap - My First Bootstrap Page</h1>
-		<p>Texto de la página - This is some text.</p> 
-		<p>Otro párrafo de la página</p>
-		<p>Modificacion del domingo 6 de noviembre de 2106</p>
+		<img src="./include/img/logo100.png" alt="Logo Empresa" class="img-responsive" height="25%" >
+		<h1>Gestión de permisos</h1>
+		<h2>Inicia sesión para acceder</h2>
+		<form>
+			<div class="form-group">
+				<label for="exampleInputEmail1">Usuario o Dirección de correo electrónico</label>
+				<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Correo electrónico">
+			</div>
+			<div class="form-group">
+				<label for="exampleInputPassword1">Contraseña</label>
+				<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+			</div>
+			<div class="checkbox">
+				<label>
+					<input type="checkbox"> No cerrar sesión
+				</label>
+			</div>
+			<button type="submit" class="btn btn-default">Aceptar</button>
+			<a class="help-block" href="#">No recuerdo los datos de mi cuenta</a>
+		</form>
+		<a href="#">Crear cuenta</a>
 	</div>
 </body>
 </html>
