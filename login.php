@@ -16,7 +16,7 @@
 			<div class="col-md-4">
 				<img src="./include/img/logo100.png" alt="Logo Empresa" class="img-responsive center-block" height="25%" >
 				<h1 class="text-center">Gestión de permisos</h1>
-				<h3>Inicia sesión para acceder</h3>
+				<h3>Inicie sesión para acceder</h3>
 				<form>
 					<div class="form-group">
 						<label for="exampleInputEmail1">Correo electrónico</label>
