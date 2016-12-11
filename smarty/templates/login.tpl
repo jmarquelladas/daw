@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--
 Descripción: Template smarty para index.php
-Versión - Fecha: 1.0 
+Versión - Fecha: 1.0
 Autor: José Miguel Arquelladas
 Email: jmaruiz@gmail.com
 Twitter: @jmarquelladas
@@ -12,6 +12,7 @@ Twitter: @jmarquelladas
         <title>Inicio de sesión Banca Electónica DWES 2015-2016</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
         <link href="estilo.css" type="text/css" rel="stylesheet"/>
     </head>
     <body>
@@ -64,7 +65,7 @@ Twitter: @jmarquelladas
                             <input type="submit" name="cancelar" value="Salir" class="botones">
                         </div>
                     </form>
-                {/if} 
+                {/if}
             </div>
             <div id="pie">
                 <p class="pie_pagina">Tarea 5 - DWES. DAW 2015-2016.<br/>José Miguel Arquelladas Ruiz</p>
