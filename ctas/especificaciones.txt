@@ -70,8 +70,7 @@ De cada tarjeta bancaria necesitamos conocer:
 	* Para CUENTAS
 		- NOMBRE O DESCRIPCION DE APLICACION
 		- URL DE ACCESO
-		- COMENTARIO U OBSERVACIONES
-		- TARJETA BANCARIA
+		- COMENTARIO U OBSERVACIONESCódigo
 		- NOMBRE USUARIO ACCESO
 		- CONTRASEÑA ACCESO
 		- LOGO O IMAGEN ASOCIADA
@@ -104,4 +103,6 @@ De cada tarjeta bancaria necesitamos conocer:
 
 	No se aprecia eb el modelo resultante ningún ciclo innecesario y ninguna redundancia que deba ser corregida.
 
-7. DIAGRAMA E-R 
+7. DIAGRAMA E-R
+
+	Realizado don DIA UML en fichero externo. dentro de la carpeta de la app web
