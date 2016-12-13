@@ -1,0 +1,107 @@
+********************************
+Gestión de cuentas y contraseñas
+********************************
+
+La app gestiona las cuentas de usuarios en las diferentes aplicaciones en las que están registrados.
+
+De cada usuario necesitamos su nombre y apellidos, correo electronico, y su nombre de usuario y contraseña. No puede haber usuarios repetidos con el mismo nombre, apellidos y correo electronico. El usuario tampoco puede repetirse. Otros datos interesantes:
+
+	* Fecha de registro
+	* Fecha de último acceso
+
+De cada usuario vamos a tener registros del acceso a las diferentes aplicaciones que este utilice. Para cada registro de este tipo interesa conocer:
+
+	* Nombre de la aplicación donde esta registrado el usuario
+	* URL de login a la aplicación
+	* Comentario si es necesario
+	* Si tiene tarjeta de entidad financiera y los datos
+	* Nombre de usuario de acceso del usuario
+	* Contraseña de acceso del usuario
+	* Logo o imagen asociada
+	* Fecha de registro
+	* Fecha último acceso
+
+De cada tarjeta bancaria necesitamos conocer:
+
+	* TIPO
+	* ENTIDAD
+	* TITULAR
+	* DIGITOS
+	* FECHA CADUCIDAD
+	* CCV
+
+1. ENTIDADES
+
+	* USUARIO
+	* CUENTAS
+	* TARJETAS
+
+2. COMO SE RELACIONAN
+
+	* Los usuarios tienen cuentas
+	* Las cuentas pueden tener tarjetas bancarias asociadas
+
+3. CARDINALIDADES de ENTIDADES y RELACIONES
+
+	* De las entidades:
+		- En la relacion USUARIOS tienen CUENTAS
+			· Una cuenta ¿ cuántos usuarios puede tener ? Sólo un usuario (1,1)
+			· Un usuario ¿ cuántas cuentas puede tener ? Como mínimo 1 y como máximo varios (1,n)
+		- En la relación CUENTAS tienen TARJETAS
+			· Una tarjeta, ¿ en cuántas CUENTAS puede existir ? Como mínimo 1 y como máximo varios (1,n)
+			· Una cuenta, ¿ cuantas tarjetas puede tener ? Ninguna o 1 tarjeta (0,1)
+
+	* De las relaciones:
+		- La relación "usuarios tienen cuentas" de tipo N:M
+		- La relación "cuentas tienen tarjetas" de tipo 0:N
+
+4. ATRIBUTOS de ENTIDADES de RELACIONES y estudio de claves candidatas y primarias
+
+	ATRIBUTOS.
+	==========
+	* Para USUARIO es necesario almacenar:
+		- NOMBRE
+		- APELLIDOS
+		- EMAIL
+		- FECHA NACIMIENTO
+		- FECHA REGISTRO
+		- FECHA ULTIMO ACCESO
+
+	* Para CUENTAS
+		- NOMBRE O DESCRIPCION DE APLICACION
+		- URL DE ACCESO
+		- COMENTARIO U OBSERVACIONES
+		- TARJETA BANCARIA
+		- NOMBRE USUARIO ACCESO
+		- CONTRASEÑA ACCESO
+		- LOGO O IMAGEN ASOCIADA
+		- FECHA REGISTRO
+		- FECHA ULTIMO ACCESO
+
+	* Para TARJETAS
+		- TIPO
+		- ENTIDAD BANCARIA
+		- TITULAR
+		- DIGITOS
+		- FECHA CADUCIDAD
+		- CCV
+
+	La mayoría de atributos pertenecen a las entidades, pero también una relación puede tener un atributo.
+
+	CLAVES CANDIDATAS Y PRIMARIAS.
+	==============================
+	Debemos elegir entre los atributos de cada entidad, aunque en la vida real las claves primarias utilizadas son del tipo codigo, numero, id., etc., deberíamos elegir entre los que se nos dan el el documentos de especificación.
+
+	* Un usuario puede identificarse por el EMAIL por lo que además de ser la clave candidata es la clave primaria.
+	* Una cuenta parece difícil identificarla por alguno de sus atributos por lo que se puede añadir un atributo del tipo código como clave primaria.
+	* Una tarjeta puede indentificarse por los dígitos por lo que además de ser la clave candidata es la clave primaria.
+
+5. GENERALIZACION o ESPECIALIZACION
+
+	No parece que exista ninguna generalización en ninguna de las entidades
+
+6. COMPROBACION DE NO EXISTENCIA DE REDUNDANCIAS EN EL MODELO RESULTANTE
+
+	No se aprecia eb el modelo resultante ningún ciclo innecesario y ninguna redundancia que deba ser corregida.
+
+7. DIAGRAMA E-R 
